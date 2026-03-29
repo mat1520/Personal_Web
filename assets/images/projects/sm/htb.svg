@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 225" width="400" height="225">
-  <rect width="400" height="225" fill="#141d2b"/>
-  <g transform="translate(200,100)">
-    <polygon points="0,-70 70,-35 70,35 0,70 -70,35 -70,-35" fill="#9fef00"/>
-    <polygon points="0,-50 50,-25 50,25 0,50 -50,25 -50,-25" fill="#141d2b"/>
-    <text x="0" y="8" fill="#9fef00" font-family="monospace" font-size="18" text-anchor="middle" font-weight="bold">HTB</text>
-  </g>
-  <text x="200" y="200" fill="#ffffff" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Hack The Box</text>
-</svg>
