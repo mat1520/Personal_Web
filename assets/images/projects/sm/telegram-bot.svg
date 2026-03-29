@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 225" width="400" height="225">
+  <defs>
+    <linearGradient id="bg-sm" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2481cc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0088cc;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="400" height="225" fill="url(#bg-sm)"/>
+  
+  <circle cx="200" cy="100" r="50" fill="#fff" opacity="0.95"/>
+  <circle cx="200" cy="100" r="40" fill="#0088cc"/>
+  
+  <path d="M180 90 l32 11 l-11 22 l-14 -6 l-5 -12 z" fill="#fff"/>
+  
+  <circle cx="130" cy="60" r="4" fill="#fff" opacity="0.6"/>
+  <circle cx="270" cy="65" r="3" fill="#fff" opacity="0.5"/>
+  <circle cx="100" cy="140" r="5" fill="#fff" opacity="0.6"/>
+  <circle cx="300" cy="145" r="3" fill="#fff" opacity="0.4"/>
+  
+  <rect x="160" y="160" width="80" height="18" rx="9" fill="#fff" opacity="0.9"/>
+  <text x="200" y="173" fill="#0088cc" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" font-weight="bold">🤖 Bot</text>
+  
+  <text x="200" y="200" fill="#fff" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" font-weight="bold">Telegram Bot</text>
+  <text x="200" y="215" fill="#b3d9ff" font-family="monospace" font-size="8" text-anchor="middle">CC Checker</text>
+</svg>

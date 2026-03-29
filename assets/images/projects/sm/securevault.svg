@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="225" viewBox="0 0 400 225">
+  <rect fill="#0f172a" width="400" height="225"/>
+  <rect fill="#1e293b" x="80" y="40" width="240" height="145" rx="8"/>
+  <rect fill="#22c55e" x="100" y="60" width="200" height="30" rx="4"/>
+  <rect fill="#334155" x="100" y="100" width="200" height="20" rx="2"/>
+  <rect fill="#334155" x="100" y="130" width="200" height="20" rx="2"/>
+  <circle fill="#22c55e" cx="200" cy="200" r="15"/>
+  <text fill="#fff" font-family="monospace" font-size="10" x="200" y="75" text-anchor="middle">SecureVault</text>
+</svg>

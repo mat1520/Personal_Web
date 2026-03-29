@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <rect fill="#0f172a" width="800" height="450"/>
+  <rect fill="#1e293b" x="150" y="60" width="500" height="330" rx="16"/>
+  <rect fill="#22c55e" x="190" y="100" width="420" height="60" rx="8"/>
+  <rect fill="#334155" x="190" y="180" width="420" height="40" rx="6"/>
+  <rect fill="#334155" x="190" y="235" width="420" height="40" rx="6"/>
+  <rect fill="#334155" x="190" y="290" width="420" height="40" rx="6"/>
+  <circle fill="#22c55e" cx="400" cy="410" r="25"/>
+  <text fill="#fff" font-family="monospace" font-size="20" x="400" y="138" text-anchor="middle">SecureVault Password Manager</text>
+  <text fill="#94a3b8" font-family="system-ui" font-size="12" x="400" y="160" text-anchor="middle">Cifrado AES-256 | Autenticación Maestra</text>
+</svg>

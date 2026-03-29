@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" width="600" height="340">
+  <rect width="600" height="340" fill="#141d2b"/>
+  <g transform="translate(300,140)">
+    <polygon points="0,-100 100,-50 100,50 0,100 -100,50 -100,-50" fill="#9fef00"/>
+    <polygon points="0,-75 75,-38 75,38 0,75 -75,38 -75,-38" fill="#141d2b"/>
+    <text x="0" y="12" fill="#9fef00" font-family="monospace" font-size="28" text-anchor="middle" font-weight="bold">HTB</text>
+  </g>
+  <text x="300" y="300" fill="#ffffff" font-family="Arial, sans-serif" font-size="16" text-anchor="middle">Hack The Box Writeups</text>
+</svg>

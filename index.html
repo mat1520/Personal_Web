@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ariel Melo - Estudiante de Ingeniería de Sistemas, Ciberseguridad & Desarrollo">
+    <title>Ariel Melo Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#inicio" class="logo">Mat.dev</a>
+            <ul>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="assets/docs/Curriculum Vitae Ariel Melo.pdf" download>CV</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <figure>
+                <img src="assets/images/iconprofile.webp" alt="Ariel Melo" width="160" height="160">
+            </figure>
+            <h1>Hola, soy <strong>Ariel Melo</strong></h1>
+            <p class="subtitle">Ciberseguridad & Desarrollo Backend</p>
+            <a href="assets/docs/Curriculum Vitae Ariel Melo.pdf" download class="btn-cv">Descargar CV</a>
+        </section>
+
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <p class="about-text">
+                Soy <strong>Ariel Melo</strong>, estudiante de <strong>Ingeniería de Sistemas</strong> en la UIDE con pasión por la <strong>ciberseguridad</strong> y el <strong>desarrollo backend</strong>. Desde joven me ha fascinado la tecnología y cómo funciona el mundo digital, lo que me llevó a explorar áreas como la seguridad informática y Sistemas Operativos.
+            </p>
+        </section>
+
+        <section id="habilidades" class="alt-bg">
+            <h2>Habilidades</h2>
+            <ol class="timeline">
+                <li class="timeline-item">
+                    <article>
+                        <img src="assets/images/icons/timeline/security.svg" alt="" width="24" height="24">
+                        <h3>Seguridad</h3>
+                        <p> Bash, Metasploit, Redes Wpa2, Burpsuite</p>
+                    </article>
+                </li>
+                <li class="timeline-item">
+                    <article>
+                        <img src="assets/images/icons/timeline/backend.svg" alt="" width="24" height="24">
+                        <h3>Backend</h3>
+                        <p>Python / FastAPI, Go / Gin, Java</p>
+                    </article>
+                </li>
+                <li class="timeline-item">
+                    <article>
+                        <img src="assets/images/icons/timeline/devops.svg" alt="" width="24" height="24">
+                        <h3>DevOps</h3>
+                        <p>Linux , Docker, Git / GitHub, CI/CD</p>
+                    </article>
+                </li>
+                <li class="timeline-item">
+                    <article>
+                        <img src="assets/images/icons/timeline/database.svg" alt="" width="24" height="24">
+                        <h3>Databases</h3>
+                        <p>PostgreSQL, MySQL, SQLite</p>
+                    </article>
+                </li>
+            </ol>
+        </section>
+
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <ul class="projects-grid">
+                <li>
+                    <article class="project-card">
+                        <img srcset="assets/images/projects/sm/business.svg 480w,
+                                     assets/images/projects/md/business.svg 768w,
+                                     assets/images/projects/lg/business.svg 1200w"
+                             sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 400px"
+                             src="assets/images/projects/lg/business.svg"
+                             alt="Business Manager SaaS"
+                             loading="lazy">
+                        <section class="project-info">
+                            <h3><a href="https://github.com/mat1520/Business-Manager-SaaS" target="_blank" rel="noopener">Business Manager SaaS</a></h3>
+                            <p>Sistema de gestión empresarial con autenticación, dashboard y CRUDs completos.</p>
+                            <ul class="tech-tags">
+                                <li><img src="assets/images/icons/technologies/go.svg" alt="" width="16" height="16"><span>Go</span></li>
+                                <li><img src="assets/images/icons/technologies/gin.svg" alt="" width="16" height="16"><span>Gin</span></li>
+                                <li><img src="assets/images/icons/technologies/postgresql.svg" alt="" width="16" height="16"><span>PostgreSQL</span></li>
+                            </ul>
+                        </section>
+                    </article>
+                </li>
+                <li>
+                    <article class="project-card">
+                        <img srcset="assets/images/projects/sm/securevault.svg 480w,
+                                     assets/images/projects/md/securevault.svg 768w,
+                                     assets/images/projects/lg/securevault.svg 1200w"
+                             sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 400px"
+                             src="assets/images/projects/lg/securevault.svg"
+                             alt="SecureVault"
+                             loading="lazy">
+                        <section class="project-info">
+                            <h3><a href="https://github.com/mat1520/securevault-password-manager" target="_blank" rel="noopener">SecureVault Password Manager</a></h3>
+                            <p>Administrador de contraseñas con cifrado AES-256 e interfaz gráfica.</p>
+                            <ul class="tech-tags">
+                                <li><img src="assets/images/icons/technologies/python.svg" alt="" width="16" height="16"><span>Python</span></li>
+                                <li><img src="assets/images/icons/technologies/cryptography.svg" alt="" width="16" height="16"><span>Cryptography</span></li>
+                                <li><img src="assets/images/icons/technologies/tkinter.svg" alt="" width="16" height="16"><span>Tkinter</span></li>
+                            </ul>
+                        </section>
+                    </article>
+                </li>
+                <li>
+                    <article class="project-card">
+                        <img srcset="assets/images/projects/sm/htb.svg 480w,
+                                     assets/images/projects/md/htb.svg 768w,
+                                     assets/images/projects/lg/htb.svg 1200w"
+                             sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 400px"
+                             src="assets/images/projects/lg/htb.svg"
+                             alt="Hack The Box"
+                             loading="lazy">
+                        <section class="project-info">
+                            <h3><a href="https://github.com/mat1520/HACK-THE-BOX" target="_blank" rel="noopener">Hack The Box Writeups</a></h3>
+                            <p>Writeups y soluciones de máquinas de pentesting en HTB.</p>
+                            <ul class="tech-tags">
+                                <li><img src="assets/images/icons/technologies/shell.svg" alt="" width="16" height="16"><span>Shell</span></li>
+                                <li><img src="assets/images/icons/technologies/pentesting.svg" alt="" width="16" height="16"><span>Pentesting</span></li>
+                                <li><img src="assets/images/icons/technologies/ctf.svg" alt="" width="16" height="16"><span>CTF</span></li>
+                            </ul>
+                        </section>
+                    </article>
+                </li>
+                <li>
+                    <article class="project-card">
+                        <img srcset="assets/images/projects/sm/telegram-bot.svg 480w,
+                                     assets/images/projects/md/telegram-bot.svg 768w,
+                                     assets/images/projects/lg/telegram-bot.svg 1200w"
+                             sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 400px"
+                             src="assets/images/projects/lg/telegram-bot.svg"
+                             alt="Telegram Bot CC Checker"
+                             loading="lazy">
+                        <section class="project-info">
+                            <h3><a href="https://github.com/mat1520/telegram-bot-cc-checker-" target="_blank" rel="noopener">Telegram Bot CC Checker</a></h3>
+                            <p>Bot educativo de Telegram para validación de tarjetas con algoritmo Luhn.</p>
+                            <ul class="tech-tags">
+                                <li><img src="assets/images/icons/technologies/php.svg" alt="" width="16" height="16"><span>PHP</span></li>
+                                <li><img src="assets/images/icons/technologies/telegram.svg" alt="" width="16" height="16"><span>Telegram API</span></li>
+                                <li><img src="assets/images/icons/technologies/luhn.svg" alt="" width="16" height="16"><span>Luhn Algorithm</span></li>
+                            </ul>
+                        </section>
+                    </article>
+                </li>
+            </ul>
+        </section>
+
+        <section id="contacto" class="contact alt-bg">
+            <h2>Contacto</h2>
+            <p class="contact-intro">¿Quieres colaborar? Escríbeme.</p>
+            <form class="contact-form" action="#" method="post">
+                <fieldset>
+                    <legend class="sr-only">Formulario</legend>
+                    <p class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </p>
+                    <p class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </p>
+                    <p class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="3" required></textarea>
+                    </p>
+                    <p class="form-group">
+                        <button type="submit">Enviar</button>
+                    </p>
+                </fieldset>
+            </form>
+            <hr class="contact-divider">
+            <address>
+                <ul class="contact-links">
+                    <li><a href="mailto:arielmelo1520@hotmail.com" class="contact-link">
+                        <img src="assets/images/icons/contact/email.svg" alt="" width="16" height="16">
+                        Email
+                    </a></li>
+                    <li><a href="tel:+593984403461" class="contact-link">
+                        <img src="assets/images/icons/contact/phone.svg" alt="" width="16" height="16">
+                        Teléfono
+                    </a></li>
+                    <li><a href="https://github.com/mat1520" target="_blank" rel="noopener" class="contact-link">
+                        <img src="assets/images/icons/contact/github.svg" alt="" width="16" height="16">
+                        GitHub
+                    </a></li>
+                    <li><a href="https://linkedin.com/in/ariel-matias-melo-pazmiño" target="_blank" rel="noopener" class="contact-link">
+                        <img src="assets/images/icons/contact/linkedin.svg" alt="" width="16" height="16">
+                        LinkedIn
+                    </a></li>
+                </ul>
+            </address>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="#inicio">Ariel Melo</a> &copy; 2026</p>
+    </footer>
+</body>
+</html>

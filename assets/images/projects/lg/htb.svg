@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <rect width="800" height="450" fill="#141d2b"/>
+  <g transform="translate(400,180)">
+    <polygon points="0,-130 120,-65 120,65 0,130 -120,65 -120,-65" fill="#9fef00"/>
+    <polygon points="0,-100 90,-50 90,45 0,95 -90,45 -90,-50" fill="#141d2b"/>
+    <text x="0" y="15" fill="#9fef00" font-family="monospace" font-size="36" text-anchor="middle" font-weight="bold">HTB</text>
+  </g>
+  <text x="400" y="380" fill="#ffffff" font-family="Arial, sans-serif" font-size="20" text-anchor="middle">Hack The Box Writeups</text>
+  <text x="400" y="410" fill="#9fef00" font-family="monospace" font-size="14" text-anchor="middle">Pentesting | CTF | Security</text>
+</svg>
