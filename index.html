@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav aria-label="Navegacion principal">
             <a href="#inicio" class="logo">Mat.dev</a>
             <ul>
                 <li><a href="#sobre-mi">Sobre mí</a></li>
@@ -21,25 +21,25 @@
         </nav>
     </header>
 
-    <main>
-        <section id="inicio" class="hero">
+    <main id="contenido-principal">
+        <section id="inicio" class="hero" aria-labelledby="titulo-inicio">
             <figure>
                 <img src="assets/images/icons/me/iconprofile.webp" alt="Ariel Melo" width="160" height="160">
             </figure>
-            <h1>Hola, soy <strong>Ariel Melo</strong></h1>
+            <h1 id="titulo-inicio">Hola, soy <strong>Ariel Melo</strong></h1>
             <p class="subtitle">Ciberseguridad & Desarrollo Backend</p>
             <a href="assets/docs/Curriculum Vitae Ariel Melo.pdf" download class="btn-cv">Descargar CV</a>
         </section>
 
-        <section id="sobre-mi">
-            <h2>Sobre mí</h2>
+        <section id="sobre-mi" aria-labelledby="titulo-sobre-mi">
+            <h2 id="titulo-sobre-mi">Sobre mí</h2>
             <p class="about-text">
                 Soy <strong>Ariel Melo</strong>, estudiante de <strong>Ingeniería de Sistemas</strong> en la UIDE con pasión por la <strong>ciberseguridad</strong> y el <strong>desarrollo backend</strong>. Desde joven me ha fascinado la tecnología y cómo funciona el mundo digital, lo que me llevó a explorar áreas como la seguridad informática y Sistemas Operativos.
             </p>
         </section>
 
-        <section id="habilidades" class="alt-bg">
-            <h2>Habilidades</h2>
+        <section id="habilidades" class="alt-bg" aria-labelledby="titulo-habilidades">
+            <h2 id="titulo-habilidades">Habilidades</h2>
             <ol class="timeline">
                 <li class="timeline-item">
                     <article>
@@ -72,8 +72,8 @@
             </ol>
         </section>
 
-        <section id="proyectos">
-            <h2>Proyectos</h2>
+        <section id="proyectos" aria-labelledby="titulo-proyectos">
+            <h2 id="titulo-proyectos">Proyectos</h2>
             <ul class="projects-grid">
                 <li>
                     <article class="project-card">
@@ -142,27 +142,27 @@
             </ul>
         </section>
 
-        <section id="contacto" class="contact alt-bg">
-            <h2>Contacto</h2>
+        <section id="contacto" class="contact alt-bg" aria-labelledby="titulo-contacto">
+            <h2 id="titulo-contacto">Contacto</h2>
             <p class="contact-intro">Te gusto mi trabajo, puedes contactarme.</p>
             <form class="contact-form" action="#" method="post">
                 <fieldset>
                     <legend class="sr-only">Formulario</legend>
-                    <p class="form-group">
+                    <div class="form-group">
                         <label for="nombre">Nombre</label>
                         <input type="text" id="nombre" name="nombre" placeholder="Tu nombre aqui" required>
-                    </p>
-                    <p class="form-group">
+                    </div>
+                    <div class="form-group">
                         <label for="email">Email</label>
                         <input type="email" id="email" name="email" placeholder="ariel@email.com" required>
-                    </p>
-                    <p class="form-group">
+                    </div>
+                    <div class="form-group">
                         <label for="mensaje">Mensaje</label>
                         <textarea id="mensaje" name="mensaje" rows="3" placeholder="Escribe tu mensaje aqui" required></textarea>
-                    </p>
-                    <p class="form-group">
+                    </div>
+                    <div class="form-group">
                         <button type="submit">Enviar</button>
-                    </p>
+                    </div>
                 </fieldset>
             </form>
             <hr class="contact-divider">
