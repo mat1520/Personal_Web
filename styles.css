@@ -55,6 +55,7 @@ fieldset { border: none; }
 .form-group { margin-bottom: 12px; }
 .form-group label { display: block; margin-bottom: 4px; color: #555; font-size: 0.8rem; }
 .form-group input, .form-group textarea { width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 6px; font-size: 0.9rem; }
+.form-group textarea { min-height: 96px; resize: none; }
 .form-group input:focus, .form-group textarea:focus { outline: none; border-color: #0066cc; }
 .form-group button { width: 100%; padding: 10px; background: #0066cc; color: #fff; border: none; border-radius: 6px; cursor: pointer; }
 .contact-divider { border: none; border-top: 1px solid #e5e5e5; width: 40px; margin: 20px auto; }
