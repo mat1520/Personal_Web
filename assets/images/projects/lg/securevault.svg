@@ -1,11 +1,65 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
-  <rect fill="#0f172a" width="800" height="450"/>
-  <rect fill="#1e293b" x="150" y="60" width="500" height="330" rx="16"/>
-  <rect fill="#22c55e" x="190" y="100" width="420" height="60" rx="8"/>
-  <rect fill="#334155" x="190" y="180" width="420" height="40" rx="6"/>
-  <rect fill="#334155" x="190" y="235" width="420" height="40" rx="6"/>
-  <rect fill="#334155" x="190" y="290" width="420" height="40" rx="6"/>
-  <circle fill="#22c55e" cx="400" cy="410" r="25"/>
-  <text fill="#fff" font-family="monospace" font-size="20" x="400" y="138" text-anchor="middle">SecureVault Password Manager</text>
-  <text fill="#94a3b8" font-family="system-ui" font-size="12" x="400" y="160" text-anchor="middle">Cifrado AES-256 | Autenticación Maestra</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="vault-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a2332;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="vault-lock" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#vault-bg)"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="120" cy="80" r="45" fill="#10b981" opacity="0.1"/>
+  <circle cx="680" cy="380" r="55" fill="#10b981" opacity="0.08"/>
+  
+  <!-- Vault door background -->
+  <rect x="200" y="80" width="400" height="300" rx="16" fill="#1e293b" filter="drop-shadow(0 10px 40px rgba(0, 0, 0, 0.5))"/>
+  
+  <!-- Vault door metal effect -->
+  <rect x="200" y="80" width="400" height="300" rx="16" fill="none" stroke="#334155" stroke-width="3" opacity="0.5"/>
+  
+  <!-- Vault bolts (decorative) -->
+  <circle cx="220" cy="100" r="6" fill="#64748b"/>
+  <circle cx="780" cy="100" r="6" fill="#64748b"/>
+  <circle cx="220" cy="360" r="6" fill="#64748b"/>
+  <circle cx="780" cy="360" r="6" fill="#64748b"/>
+  
+  <!-- Lock mechanism -->
+  <g transform="translate(400, 180)">
+    <!-- Lock body -->
+    <rect x="-50" y="-40" width="100" height="80" rx="8" fill="url(#vault-lock)" filter="drop-shadow(0 8px 20px rgba(0, 0, 0, 0.3))"/>
+    
+    <!-- Lock shackle (arco) -->
+    <path d="M -30 -40 Q -30 -80 0 -80 Q 30 -80 30 -40" stroke="url(#vault-lock)" stroke-width="8" fill="none" stroke-linecap="round" filter="drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3))"/>
+    
+    <!-- Keyhole -->
+    <circle cx="0" cy="10" r="8" fill="#0f172a"/>
+    <circle cx="0" cy="30" r="5" fill="#0f172a"/>
+  </g>
+  
+  <!-- Shield with checkmark for security -->
+  <g transform="translate(480, 250)">
+    <!-- Shield -->
+    <path d="M 0 0 L 50 0 L 50 30 Q 50 60 25 75 Q 0 60 0 30 Z" fill="#10b981" opacity="0.9" filter="drop-shadow(0 5px 15px rgba(0, 0, 0, 0.2))"/>
+    
+    <!-- Checkmark -->
+    <path d="M 12 38 L 22 48 L 38 28" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  
+  <!-- Password dots (visual representation) -->
+  <g transform="translate(220, 140)">
+    <circle cx="0" cy="0" r="4" fill="#94a3b8" opacity="0.6"/>
+    <circle cx="15" cy="0" r="4" fill="#94a3b8" opacity="0.6"/>
+    <circle cx="30" cy="0" r="4" fill="#94a3b8" opacity="0.6"/>
+    <circle cx="45" cy="0" r="4" fill="#94a3b8" opacity="0.6"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="400" y="400" fill="#fff" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" font-weight="bold">SecureVault Manager</text>
+  <text x="400" y="425" fill="#10b981" font-family="monospace" font-size="14" text-anchor="middle">AES-256 Encryption • Master Authentication</text>
 </svg>

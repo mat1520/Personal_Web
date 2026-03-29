@@ -1,33 +1,57 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#2481cc;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#0088cc;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#1a472a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2d5a40;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="card" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0099cc;stop-opacity:1" />
     </linearGradient>
   </defs>
   
   <!-- Background -->
   <rect width="800" height="450" fill="url(#bg)"/>
   
-  <!-- Large Telegram logo circle -->
-  <circle cx="400" cy="200" r="120" fill="#fff" opacity="0.95"/>
-  <circle cx="400" cy="200" r="100" fill="#0088cc"/>
+  <!-- Decorative circles -->
+  <circle cx="100" cy="80" r="40" fill="#00d4ff" opacity="0.1"/>
+  <circle cx="700" cy="350" r="60" fill="#00d4ff" opacity="0.08"/>
   
-  <!-- Paper plane icon -->
-  <path d="M350 175 l80 25 l-25 50 l-30 -15 l-10 -25 z" fill="#fff"/>
-  <path d="M360 180 l50 15 l-15 30 l-20 -10 l-5 -15 z" fill="#0088cc" opacity="0.3"/>
+  <!-- Credit Card -->
+  <g transform="translate(240, 100)">
+    <!-- Card body -->
+    <rect x="0" y="0" width="320" height="200" rx="16" fill="url(#card)" filter="drop-shadow(0 10px 30px rgba(0, 0, 0, 0.3))"/>
+    
+    <!-- Card shine -->
+    <rect x="0" y="0" width="320" height="80" rx="16" fill="#fff" opacity="0.1"/>
+    
+    <!-- Chip -->
+    <rect x="20" y="120" width="50" height="50" rx="4" fill="#ffd700" opacity="0.9"/>
+    <rect x="25" y="125" width="40" height="40" rx="2" fill="#f0c000"/>
+    <circle cx="35" cy="135" r="3" fill="#1a472a"/>
+    <circle cx="45" cy="135" r="3" fill="#1a472a"/>
+    <circle cx="55" cy="135" r="3" fill="#1a472a"/>
+    <circle cx="35" cy="150" r="3" fill="#1a472a"/>
+    <circle cx="45" cy="150" r="3" fill="#1a472a"/>
+    <circle cx="55" cy="150" r="3" fill="#1a472a"/>
+    
+    <!-- Card number -->
+    <text x="20" y="185" fill="#fff" font-family="monospace" font-size="24" letter-spacing="2">•••• •••• •••• 3847</text>
+  </g>
   
-  <!-- Decorative elements -->
-  <circle cx="250" cy="120" r="8" fill="#fff" opacity="0.7"/>
-  <circle cx="550" cy="130" r="6" fill="#fff" opacity="0.5"/>
-  <circle cx="200" cy="280" r="10" fill="#fff" opacity="0.6"/>
-  <circle cx="600" cy="290" r="7" fill="#fff" opacity="0.4"/>
+  <!-- Shield with checkmark -->
+  <g transform="translate(420, 120)">
+    <!-- Shield -->
+    <path d="M 0 0 L 80 0 L 80 50 Q 80 100 40 120 Q 0 100 0 50 Z" fill="#fff" opacity="0.95" filter="drop-shadow(0 5px 15px rgba(0, 0, 0, 0.2))"/>
+    
+    <!-- Shield border -->
+    <path d="M 0 0 L 80 0 L 80 50 Q 80 100 40 120 Q 0 100 0 50 Z" fill="none" stroke="#00d4ff" stroke-width="3"/>
+    
+    <!-- Checkmark -->
+    <path d="M 20 55 L 35 70 L 60 40" stroke="#00d4ff" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
   
-  <!-- Bot badge -->
-  <rect x="320" y="340" width="160" height="35" rx="17" fill="#fff" opacity="0.9"/>
-  <text x="400" y="362" fill="#0088cc" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" font-weight="bold">🤖 CC Checker Bot</text>
-  
-  <!-- Title -->
-  <text x="400" y="410" fill="#fff" font-family="Arial, sans-serif" font-size="26" text-anchor="middle" font-weight="bold">Telegram Bot CC Checker</text>
-  <text x="400" y="435" fill="#b3d9ff" font-family="monospace" font-size="14" text-anchor="middle">PHP • Telegram API • Educational Tool</text>
+  <!-- Description text -->
+  <text x="400" y="380" fill="#fff" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" font-weight="bold">Card Validator Bot</text>
+  <text x="400" y="410" fill="#00d4ff" font-family="monospace" font-size="14" text-anchor="middle">Luhn Algorithm • Secure Validation</text>
 </svg>

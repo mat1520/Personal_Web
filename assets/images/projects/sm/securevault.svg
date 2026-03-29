@@ -1,9 +1,48 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="400" height="225" viewBox="0 0 400 225">
-  <rect fill="#0f172a" width="400" height="225"/>
-  <rect fill="#1e293b" x="80" y="40" width="240" height="145" rx="8"/>
-  <rect fill="#22c55e" x="100" y="60" width="200" height="30" rx="4"/>
-  <rect fill="#334155" x="100" y="100" width="200" height="20" rx="2"/>
-  <rect fill="#334155" x="100" y="130" width="200" height="20" rx="2"/>
-  <circle fill="#22c55e" cx="200" cy="200" r="15"/>
-  <text fill="#fff" font-family="monospace" font-size="10" x="200" y="75" text-anchor="middle">SecureVault</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 225" width="400" height="225">
+  <defs>
+    <linearGradient id="vault-bg-sm" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a2332;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="vault-lock-sm" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="225" fill="url(#vault-bg-sm)"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="50" cy="40" r="25" fill="#10b981" opacity="0.1"/>
+  <circle cx="350" cy="190" r="30" fill="#10b981" opacity="0.08"/>
+  
+  <!-- Vault door -->
+  <rect x="100" y="35" width="200" height="150" rx="8" fill="#1e293b" filter="drop-shadow(0 6px 20px rgba(0, 0, 0, 0.5))"/>
+  <rect x="100" y="35" width="200" height="150" rx="8" fill="none" stroke="#334155" stroke-width="1.5" opacity="0.5"/>
+  
+  <!-- Lock mechanism -->
+  <g transform="translate(200, 95)">
+    <!-- Lock body -->
+    <rect x="-23" y="-18" width="46" height="40" rx="4" fill="url(#vault-lock-sm)" filter="drop-shadow(0 4px 10px rgba(0, 0, 0, 0.3))"/>
+    
+    <!-- Lock shackle -->
+    <path d="M -15 -18 Q -15 -38 0 -38 Q 15 -38 15 -18" stroke="url(#vault-lock-sm)" stroke-width="4" fill="none" stroke-linecap="round" filter="drop-shadow(0 2px 6px rgba(0, 0, 0, 0.3))"/>
+    
+    <!-- Keyhole -->
+    <circle cx="0" cy="5" r="4" fill="#0f172a"/>
+  </g>
+  
+  <!-- Shield with checkmark -->
+  <g transform="translate(270, 80)">
+    <!-- Shield -->
+    <path d="M 0 0 L 28 0 L 28 16 Q 28 32 14 40 Q 0 32 0 16 Z" fill="#10b981" opacity="0.9" filter="drop-shadow(0 3px 8px rgba(0, 0, 0, 0.2))"/>
+    
+    <!-- Checkmark -->
+    <path d="M 6 20 L 12 26 L 22 15" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="200" y="205" fill="#fff" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold">SecureVault</text>
+  <text x="200" y="220" fill="#10b981" font-family="monospace" font-size="8" text-anchor="middle">AES-256 Secure</text>
 </svg>
